@@ -3,11 +3,6 @@ let preloader = document.querySelector(".preloader");
 function loading() {
   preloader.style.display = "none";
 }
-// Image loading
-let loadImage = document.querySelector(".imgLoadingStatus");
-function imgLoading() {
-  loadImage.style.display = "none";
-}
 
 // Slider
 let i = 0;
