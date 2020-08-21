@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Slider in JavaScript</title>
+  </head>
+  <body onload="loading()">
+    <!-- Pre loader -->
+    <div class="preloader">
+      <h1>Loading...</h1>
+    </div>
+    <p>Slider</p>
+    <div class="container slider" id="slider">
+      <img
+        src="img/p1.jpg"
+        alt="image"
+        id="slide__img"
+        class="slide__img"
+        status="active"
+      />
+      <div class="slider__controls">
+        <i
+          class="fas fa-chevron-left fa-2x control-btn left-btn"
+          id="left-btn"
+          onclick="pre()"
+        ></i>
+        <i
+          class="fas fa-chevron-right fa-2x control-btn right-btn"
+          id="right-btn"
+          onclick="next()"
+        ></i>
+      </div>
+    </div>
+    <!-- JS -->
+    <script src="js/slider.js"></script>
+  </body>
+</html>
