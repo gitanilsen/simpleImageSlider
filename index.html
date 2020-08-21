@@ -22,12 +22,16 @@
     </div>
     <p>Slider</p>
     <div class="container slider" id="slider">
+      <div class="imgLoadingStatus">
+        <h4>Image Loading...</h4>
+      </div>
       <img
         src="img/p1.jpg"
         alt="image"
         id="slide__img"
         class="slide__img"
         status="active"
+        onload="imgLoading()"
       />
       <div class="slider__controls">
         <i

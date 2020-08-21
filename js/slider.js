@@ -3,6 +3,12 @@ let preloader = document.querySelector(".preloader");
 function loading() {
   preloader.style.display = "none";
 }
+// Image loading
+let loadImage = document.querySelector(".imgLoadingStatus");
+function imgLoading() {
+  loadImage.style.display = "none";
+}
+
 // Slider
 let i = 0;
 let slider = document.querySelector("#slider");
@@ -35,6 +41,7 @@ function pre() {
   i--;
   if (i >= 0) {
     lBtn.style.visibility = "visible";
+    rBtn.style.visibility = "visible";
     sliderImg.setAttribute("src", images[i]);
   } else if (i < 0) {
     i = 0;
